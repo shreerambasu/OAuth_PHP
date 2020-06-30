@@ -22,7 +22,7 @@
     if($acccessToken!=""){
         echo '<p>Logged In </p>';
     }else {
-        echo '<p><a href="https://github.com/login/oauth/authorize?client_id=f1bd99225ab9b65c91fa" >Sign in with Github</a></p>';
+        echo '<p><a href="https://github.com/login/oauth/authorize?client_id=<your client id>" >Sign in with Github</a></p>';
     }
   ?>
   </body>

@@ -6,8 +6,8 @@
         exit;
     }
 
-    $CLIENT_ID = 'f1bd99225ab9b65c91fa';
-    $CLIENT_SECRET = '84a8f341694dfc8ae766779364710566abce2fce';
+    $CLIENT_ID = '<your client id';
+    $CLIENT_SECRET = '<your client Secret';
 
     $URL = 'https://github.com/login/oauth/access_token';
     // POST https://github.com/login/oauth/access_token
