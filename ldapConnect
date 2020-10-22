@@ -1,0 +1,15 @@
+<?php
+$server = "ldap://<IP or Hostname of AD or LDAP SERVER>";
+
+$ldapconn = ldap_connect($server) or die ('Ubale to connect to the server');
+
+if ($ldapconn) {
+    $ldapbind = ldap_bind($ldapconn, 'tester.user@mydomain.local', 'CAdemo123!!');
+    if ($ldapbind){
+        echo 'LDAP Bind successful';
+    }else {
+        echo 'Ldap bind failed';
+    }
+} else {
+    echo 'LDAP COnnect failed';
+}
